@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import NavBar from '../Navbar/NavBar';
-import Footer from '../Components/Footer';
+import NavBar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const Root = () => {
     return (

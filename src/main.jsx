@@ -11,6 +11,7 @@ import "./index.css";
 import Home from "./Components/Home"
 import Root from "./Root/Root";
 import InfoPage from "./Components/InfoPage";
+import ScrollToTop from "./Components/ScrollToTop";
 const router = createBrowserRouter([
   {
     path: "/",

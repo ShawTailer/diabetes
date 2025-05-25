@@ -35,32 +35,33 @@ const BannerSlider = () => {
       >
         {banners.map((banner, index) => (
           <SwiperSlide key={index} className="relative flex items-center justify-center">
-            <div className="w-full h-auto max-h-[600px] flex items-center justify-center overflow-hidden bg-white">
-              <img
-                src={banner.img}
-                alt={banner.alt}
-                className="w-auto h-auto max-w-full max-h-[600px] object-contain mx-auto"
-                loading="lazy"
-              />
-            </div>
-            {banner.overlay && (
-              <div className="absolute inset-0 flex items-center">
-                <div className="container mx-auto px-4">
-                  <div className="max-w-2xl">
-                    <h2 className="text-[#1B4332] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
-                      {banner.overlay.title.line1}<br />
-                      <span className="text-[#B07E3A]">{banner.overlay.title.line2}</span>
-                    </h2>
-                    <p className="text-black text-sm sm:text-base md:text-lg mb-4 md:mb-6 lg:mb-8 max-w-xl">
-                      {banner.overlay.description}
-                    </p>
-                    <button className="bg-[#3EB489] text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold hover:bg-[#2D8B6A] transition-colors">
-                      {banner.overlay.button}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
+            <div className="relative w-full max-h-[600px] overflow-hidden">
+  <img
+    src={banner.img}
+    alt={banner.alt}
+    className="w-full h-[600px] object-cover "
+    loading="lazy"
+  />
+
+  {banner.overlay && (
+    <div className="absolute inset-0 flex items-center justify-start m-16 bg-opacity-30 z-10">
+      <div className="container mx-auto px-4">
+        <div className="max-w-2xl text-black font-normal">
+          <h2 className="whitespace-nowrap text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 ">
+            <div>{banner.overlay.title.line1}</div>
+            <div className="text-[#B07E3A] mt-6">{banner.overlay.title.line2}</div>
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 lg:mb-8 max-w-xl">
+            {banner.overlay.description}
+          </p>
+          <button className="bg-[#3EB489] text-white px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full text-sm sm:text-base md:text-lg font-semibold hover:bg-[#2D8B6A] transition-colors">
+            {banner.overlay.button}
+          </button>
+        </div>
+      </div>
+    </div>
+  )}
+</div>
           </SwiperSlide>
         ))}
       </Swiper>

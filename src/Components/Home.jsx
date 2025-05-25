@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
 import BannerSlider from "./BannerSlider";
-import Footer from "./Footer";
 
 const StatCard = ({ percentage, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-lg text-center">

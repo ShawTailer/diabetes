@@ -1,65 +1,49 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
+export default function Navbar() {
+  return (
+    <nav className="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/stella-logo.jpg" alt="Diab" className="w-40 h-auto object-contain" />
+        </Link>
 
-const Navbar = () => {
-    return (
-      <nav className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="/">
-              <img
-                src="stella logo.jpg"
-                alt="DIAB Logo"
-                className="w-64 h-auto"
-              />
-            </a>
-          </div>
-  
-          {/* Menu Links */}
-          <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-            <li>
-              <a href="/gioi-thieu" className="hover:text-blue-600">
-                Giới thiệu
-              </a>
-            </li>
-            <li>
-              <a href="/tin-tuc" className="hover:text-blue-600">
-                Tin tức
-              </a>
-            </li>
-            <li>
-              <a href="/san-pham" className="hover:text-blue-600">
-                Sản phẩm
-              </a>
-            </li>
-            <li>
-              <a href="/faq" className="hover:text-blue-600">
-                Câu hỏi thường gặp
-              </a>
-            </li>
-            <li>
-              <a href="/lien-he" className="hover:text-blue-600">
-                Liên hệ
-              </a>
-            </li>
-          </ul>
-  
-          {/* Button */}
-          <div className="hidden md:block">
+        {/* Navigation Links */}
+        <ul className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
+          <li>
+            <Link to="/info/ve-chung-toi" className="hover:text-blue-600 transition">
+              Giới thiệu
+            </Link>
+          </li>
+          <li>
+            <Link to="/info/tin-tuc" className="hover:text-blue-600 transition">
+              Tin tức
+            </Link>
+          </li>
+          <li>
+            <Link to="/info/san-pham" className="hover:text-blue-600 transition">
+              Sản phẩm
+            </Link>
+          </li>
+          <li>
+            <Link to="/info/kien-thuc" className="hover:text-blue-600 transition">
+              Kiến thức
+            </Link>
+          </li>
+          <li>
             <a
-              href="/dat-hang"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-semibold"
+              href="https://store.diab.com.vn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition"
             >
-              Đặt hàng
+              Liên hệ
             </a>
-          </div>
-  
-          {/* Mobile Menu (Optional for smaller screens) */}
-          {/* You can add a hamburger menu here if needed */}
-        </div>
-      </nav>
-    );
-  };
-  
-export default Navbar;
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}

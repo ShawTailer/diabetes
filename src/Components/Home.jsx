@@ -77,7 +77,7 @@ const Home = () => {
 
         {/* You can add more homepage sections here */}
         <section className="py-12 text-center">
-          <h2 className="text-2xl font-bold mb-4">Welcome to DIAB</h2>
+          <h2 className="text-2xl font-bold mb-4">Chào bạn tới Stella</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Chúng tôi cung cấp giải pháp hỗ trợ người tiểu đường với sản phẩm chất lượng cao, được nghiên cứu và phát triển bởi các chuyên gia hàng đầu.
           </p>
@@ -87,7 +87,7 @@ const Home = () => {
         <section className="py-16 px-4">
           <div className="container mx-auto">
             <h1 className="text-center text-4xl font-bold mb-12">
-              <span className="text-[#8B4513]">DiaB</span>
+              <span className="text-[#8B4513]">Stella</span>
               <span className="text-[#006400]"> – Thành tựu đạt được</span>
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

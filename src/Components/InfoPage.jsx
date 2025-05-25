@@ -52,7 +52,9 @@ export default function InfoPage() {
   return (
     <div className="container mx-auto px-4 py-6">
       <div className="flex flex-col lg:flex-row gap-6">
+      <div className="hidden lg:block w-full lg:w-1/4">
         <Sidebar />
+      </div>
         <div className="flex-1 bg-white p-6 rounded shadow">
           {renderContent()}
         </div>

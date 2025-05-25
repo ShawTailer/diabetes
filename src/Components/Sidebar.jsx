@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 const sections = [
   { label: 'Về chúng tôi', slug: 've-chung-toi' },
+  { label: 'Tin tức chương trình', slug: 'tin-tuc' },
   { label: 'Sản phẩm', slug: 'san-pham' },
   { label: 'Kiến thức về đái tháo đường', slug: 'kien-thuc' },
-  { label: 'Tin tức chương trình', slug: 'tin-tuc' },
 ];
 
 export default function Sidebar() {

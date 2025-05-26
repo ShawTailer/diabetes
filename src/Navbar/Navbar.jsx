@@ -23,6 +23,7 @@ export default function Navbar() {
 
         {/* Navigation Links - Desktop */}
         <ul className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
+          <li><Link to="/" className="hover:text-[#00665C] transition">Trang chủ</Link></li>
           <li><Link to="/info/ve-chung-toi" className="hover:text-[#00665C] transition">Giới thiệu</Link></li>
           <li><Link to="/info/tin-tuc" className="hover:text-[#00665C] transition">Tin tức</Link></li>
           <li><Link to="/info/kien-thuc" className="hover:text-[#00665C] transition">Kiến thức</Link></li>
@@ -35,6 +36,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="flex flex-col items-start px-6 py-4 space-y-4 font-medium text-gray-700">
+            <li><Link to="/" onClick={() => setIsOpen(false)}>Trang chủ</Link></li>
             <li><Link to="/info/ve-chung-toi" onClick={() => setIsOpen(false)}>Giới thiệu</Link></li>
             <li><Link to="/info/tin-tuc" onClick={() => setIsOpen(false)}>Tin tức</Link></li>
             <li><Link to="/info/san-pham" onClick={() => setIsOpen(false)}>Sản phẩm</Link></li>

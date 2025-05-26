@@ -8,7 +8,7 @@ const StatCard = ({ percentage, description }) => (
   </div>
 );
 
-const VideoTestimonial = ({ name, location, age, videoId }) => (
+const VideoTestimonial = ({ name, videoId }) => (
   <div className="bg-white p-4 rounded-lg shadow-lg">
     <div className="aspect-w-16 aspect-h-9 mb-4">
       <iframe
@@ -21,7 +21,7 @@ const VideoTestimonial = ({ name, location, age, videoId }) => (
     </div>
     <div className="text-center">
       <h3 className="font-semibold text-lg">{name}</h3>
-      <p className="text-gray-600">{age} tuổi - {location}</p>
+    
     </div>
   </div>
 );
@@ -48,21 +48,15 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Nguyễn Phúc Bảo Phát",
-      age: "54",
-      location: "Hà Nội",
+      name: "Sự Thật Gây Sốc Về Đái Tháo Đường Type 2 Và Cách Bạn Có Thể Tự Bảo Vệ Mình?",
       videoId: "g2nh6WIpoFA" // Add YouTube video ID here
     },
     {
-      name: "Phạm Thành Nam",
-      age: "39",
-      location: "TP. HCM",
+      name: "TOP Thực Phẩm Cứu Sống Người Bệnh Tiểu Đường Type 2",
       videoId: "-P62nQdLuhU" // Add YouTube video ID here
     },
     {
-      name: "Nguyễn Hữu Dương",
-      age: "44",
-      location: "TP. HCM",
+      name: "Hiểu đúng về bệnh di truyền: Đái tháo đường type 2",
       videoId: "JxA8bLi-nwM" // Add YouTube video ID here
     }
   ];
@@ -102,7 +96,7 @@ const Home = () => {
         <section className="py-4 px-4 bg-white">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-[#006400]">
-              Câu chuyện thành công
+              Kiến thức về đái tháo đường
             </h2>
             <div className="relative">
               <div className="flex flex-wrap justify-center gap-8">

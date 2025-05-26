@@ -59,7 +59,7 @@ export default function MyIntroPage() {
       <section className="px-4 py-10 max-w-5xl mx-auto">
         <h2 className="text-xl font-bold text-[#00665C] mb-4">Dịch vụ cung cấp</h2>
         <div className="flex flex-col md:flex-row gap-4">
-          <a href="https://www.tiktok.com/@empestrung/video/7247360114120953094?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" className="bg-white shadow px-6 py-3 rounded hover:bg-blue-50">Chương trình tư vấn cho người nghèo</a>
+          <a href="https://vt.tiktok.com/ZShwMSmPC/" target="_blank" rel="noreferrer" className="bg-white shadow px-6 py-3 rounded hover:bg-blue-50">Chương trình tư vấn cho người nghèo</a>
           <a href="https://www.tiktok.com/@chutichnhaunhau/video/7390415404214045970?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" className="bg-white shadow px-6 py-3 rounded hover:bg-blue-50">Ngủ</a>
         </div>
       </section>

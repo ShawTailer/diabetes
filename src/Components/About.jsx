@@ -1,7 +1,7 @@
 import React from 'react';
 export default function  About ()  {
     return (
-      <div className="p-6 ">
+      <div className="px-2 sm:px-6 py-10  text-gray-800">
         <h1 className="text-2xl font-bold mb-4 text-[#00665C]">GIỚI THIỆU TỔNG QUAN VỀ CÔNG TY TNHH STELLAPHARM</h1>
         <p><strong>Tên đầy đủ:</strong> Công ty TNHH Liên doanh Stellapharm</p>
         <p><strong>Tên viết tắt:</strong> Stellapharm</p>

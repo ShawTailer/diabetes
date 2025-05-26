@@ -23,7 +23,7 @@ export default function InfoPage() {
   };
 
   return (
-    <div style={{ marginLeft: '5%', marginRight: '5%' }} className="mt-6 px-4 py-6">
+    <div style={{ marginLeft: '5%', marginRight: '5%' }} className="mt-6 px-0 sm:px-4 py-6">
       <div className="flex flex-col md:flex-row gap-6">
         <div className="md:w-1/4">
           <Sidebar />

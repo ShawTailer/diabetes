@@ -1,7 +1,7 @@
 import React from 'react';
 export default function  Knowledge ()  {
     return (
-        <div className="px-6 py-10 space-y-8 text-gray-800">
+        <div className="px-2 sm:px-6 py-10 space-y-8 text-gray-800">
         <h2 className="text-3xl font-bold text-[#00665C]">
           Kiến thức về đái tháo đường
         </h2>

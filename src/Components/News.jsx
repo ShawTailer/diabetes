@@ -127,7 +127,7 @@ export default function BenefitsGrid() {
 const [openIndex, setOpenIndex] = useState(null);
   return (
     <div>
-        <div className="text-[#00665C] font-bold text-xl uppercase text-center">
+        <div className="text-[#00665C] text-2xl font-bold uppercase text-center">
             LỢI ÍCH KHI THAM GIA
         </div>
         <div className="py-12 px-4 bg-white">
@@ -146,7 +146,7 @@ const [openIndex, setOpenIndex] = useState(null);
         
         </div>
         <div className="max-w-5xl mx-auto my-10 px-4 space-y-4">
-        <div className="text-[#00665C] font-bold text-xl uppercase text-center">
+        <div className="text-[#00665C] text-2xl font-bold uppercase text-center">
             NỘI DUNG CHƯƠNG TRÌNH
         </div>
         {items.map((item, index) => (

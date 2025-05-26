@@ -1,7 +1,7 @@
 export default function Medicine() {
     return (
       <div className="px-6 py-8 space-y-6 text-gray-800">
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-3xl font-bold mb-4 text-[#00665C]">
           Thông tin thuốc: Metformin STELLA 850mg
         </h2>
   

@@ -50,7 +50,7 @@ export default function MyIntroPage() {
             className="w-40 h-40"
           />
           <figcaption className="text-sm text-center text-gray-600 mt-2">
-            Quét mã cứu bạn 
+            Quét mã hỗ trợ bạn
           </figcaption>
         </figure>
       </main>

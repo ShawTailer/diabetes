@@ -11,7 +11,7 @@ import "./index.css";
 import Home from "./Components/Home"
 import Root from "./Root/Root";
 import InfoPage from "./Components/InfoPage";
-import ScrollToTop from "./Components/ScrollToTop";
+import MyIntroPage from "./Components/MyIntroPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,9 +26,13 @@ const router = createBrowserRouter([
         path: "info/:section",   
         element: <InfoPage />,
       },
+      
     ],
   },
-  
+  {
+    path: "gioi-thieu",  // not nested in Root anymore
+    element: <MyIntroPage />,
+  },
 ]);
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(

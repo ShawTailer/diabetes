@@ -12,7 +12,7 @@ const Footer = () => {
       {/* Floating Contact Buttons */}
       <div className="fixed right-6 bottom-24 z-[1000]">
         <a
-          href="#"
+          href="/gioi-thieu"
           target="_blank"
           rel="noopener noreferrer"
           className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#0068FF] hover:bg-[#0051c7] shadow-lg transition-all duration-300 hover:scale-110 before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-blue-500 before:blur-xl before:opacity-60 before:animate-pulse"
@@ -24,7 +24,7 @@ const Footer = () => {
 
       <div className="fixed right-6 bottom-6 z-[1000]">
         <a
-          href="tel:0931888888"
+          href="tel:113"
           className="flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ea855] shadow-lg transition-all duration-300 hover:scale-110"
           style={{ boxShadow: '0 4px 12px rgba(37,211,102,0.4)' }}
         >

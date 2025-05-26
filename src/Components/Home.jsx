@@ -51,19 +51,19 @@ const Home = () => {
       name: "Nguyễn Phúc Bảo Phát",
       age: "54",
       location: "Hà Nội",
-      videoId: "dQw4w9WgXcQ" // Add YouTube video ID here
+      videoId: "g2nh6WIpoFA" // Add YouTube video ID here
     },
     {
       name: "Phạm Thành Nam",
       age: "39",
       location: "TP. HCM",
-      videoId: "dQw4w9WgXcQ" // Add YouTube video ID here
+      videoId: "-P62nQdLuhU" // Add YouTube video ID here
     },
     {
       name: "Nguyễn Hữu Dương",
       age: "44",
       location: "TP. HCM",
-      videoId: "dQw4w9WgXcQ" // Add YouTube video ID here
+      videoId: "JxA8bLi-nwM" // Add YouTube video ID here
     }
   ];
 
@@ -99,17 +99,19 @@ const Home = () => {
         </section>
 
         {/* Video Testimonials Section */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-4 px-4 bg-white">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 text-[#006400]">
               Câu chuyện thành công
             </h2>
             <div className="relative">
-              <div className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory">
+              <div className="flex flex-wrap justify-center gap-8">
                 {testimonials.map((testimonial, index) => (
-                  <div key={index} className="flex-none w-full md:w-1/2 lg:w-1/3 snap-center">
+                  <div key={index} className="flex-none w-[400px] snap-center">
+                  <div className="w-full">
                     <VideoTestimonial {...testimonial} />
                   </div>
+                </div>
                 ))}
               </div>
               {/* Navigation arrows can be added here if needed */}

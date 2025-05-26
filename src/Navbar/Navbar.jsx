@@ -25,11 +25,11 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center space-x-6 font-medium text-gray-700">
           <li><Link to="/info/ve-chung-toi" className="hover:text-blue-600 transition">Giới thiệu</Link></li>
           <li><Link to="/info/tin-tuc" className="hover:text-blue-600 transition">Tin tức</Link></li>
-          <li><Link to="/info/san-pham" className="hover:text-blue-600 transition">Sản phẩm</Link></li>
           <li><Link to="/info/kien-thuc" className="hover:text-blue-600 transition">Kiến thức</Link></li>
+          <li><Link to="/info/san-pham" className="hover:text-blue-600 transition">Sản phẩm</Link></li>
           <li>
             <a
-              href="https://store.diab.com.vn/"
+              href="/gioi-thieu"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition"
